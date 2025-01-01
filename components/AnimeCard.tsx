@@ -25,15 +25,15 @@ function AnimeCard({ anime }: Prop) {
           src={anime.image.original}
           alt={anime.name}
           fill
-          className="rounded-xl"
+          className="rounded-xl hover:bg-[#161921] transition-all duration-100 hover:bg-transparent"
         />
       </div>
       <div className="py-4 flex flex-col gap-3">
         <div className="flex justify-between items-center gap-1">
-          <h2 className="font-bold text-white text-xl line-clamp-1 w-full">
+          <h2 className="font-bold text-gray-300 text-xl line-clamp-1 w-full">
             {anime.name}
           </h2>
-          <div className="py-1 px-2 bg-[#161921] rounded-sm">
+          <div className="p-[6px] bg-[#161921] rounded-full">
             <p className="text-white text-sm font-bold capitalize">
               {anime.kind}
             </p>
