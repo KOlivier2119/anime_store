@@ -1,5 +1,4 @@
 import Image from "next/image";
-import {motion} from "framer-motion"
 import { MotionDiv } from "./MotionDiv";
 
 export interface AnimeProp {
@@ -38,7 +37,7 @@ function AnimeCard({ anime, index }: Prop) {
     className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[37vh]">
         <Image
-          src={`https://shikimori.one${anime.image.original}`}
+          src={`https://shikimori.one/${anime.image.original}`}
           alt={anime.name}
           fill
           className="rounded-xl hover:bg-[#161921] transition-all duration-100 hover:bg-transparent"
