@@ -37,10 +37,10 @@ function AnimeCard({ anime, index }: Prop) {
     className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[37vh]">
         <Image
-          src={`https://shikimori.one/${anime.image.original}`}
+          src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}
           fill
-          className="rounded-xl hover:bg-[#161921] transition-all duration-100 hover:bg-transparent"
+          className="rounded-xl"
         />
       </div>
       <div className="py-4 flex flex-col gap-3">

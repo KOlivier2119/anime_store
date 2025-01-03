@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={dmSans.className}>
-        <main className="max-w-7xl mx-auto bg-[#191d29]">
+        <main className="max-w-7xl mx-auto bg-[#000]">
           <Hero />
           {children}
           <Footer />
